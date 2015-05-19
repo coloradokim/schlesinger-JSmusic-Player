@@ -58,7 +58,7 @@ body {
   font-family: 'Lato','Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: bold;
-  background-color: rgb(247,247,247)
+  background-color: rgba(247,247,247,.9)
 }
 
 header {
@@ -70,7 +70,19 @@ header {
 }
 
 article h2 {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+ }
+
+.song1 h2 {
+	border-bottom: solid lightgrey 1px;
+}
+
+.song2 h2 {
+	border-bottom: solid lightgrey 1px;
+}
+
+.song3 h2 {
+	border-bottom: solid lightgrey 1px;
 }
 
 i {
