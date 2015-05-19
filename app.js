@@ -9,20 +9,21 @@ var playButton2 = document.getElementById("playButton2");
 
 var isPlaying = false;
 
-//if(joke.classList.contains('beryl') {
-    //joke.classList.remove('beryl');
-}
+
+
 playButton1.addEventListener('click', function(){
   if (isPlaying === true) {
     isPlaying = false;
-    //i.classList.add("fa-play");
     audio1.pause();
+    this.classList.remove("fa-stop");
+    this.classList.add("fa-play");
   }
   else {
     audio1.play();
     isPlaying = true;
-    // i.classList.remove("fa-play");
-    // i.classList.add("fa-stop");
+    this.classList.remove("fa-play");
+    this.classList.add("fa-stop");
+
   }
 });
 
@@ -30,10 +31,14 @@ playButton2.addEventListener('click', function(){
   if (isPlaying === true) {
     isPlaying = false;
     audio2.pause();
+    this.classList.remove("fa-stop");
+    this.classList.add("fa-play");
   }
   else {
     audio2.play();
     isPlaying = true;
+    this.classList.remove("fa-play");
+    this.classList.add("fa-stop");
   }
 });
 
@@ -41,10 +46,14 @@ playButton3.addEventListener('click', function(){
   if (isPlaying === true) {
     isPlaying = false;
     audio3.pause();
+    this.classList.remove("fa-stop");
+    this.classList.add("fa-play");
   }
   else {
     audio3.play();
     isPlaying = true;
+    this.classList.remove("fa-play");
+    this.classList.add("fa-stop");
   }
 });
 
@@ -52,9 +61,13 @@ playButton4.addEventListener('click', function(){
   if (isPlaying === true) {
     isPlaying = false;
     audio4.pause();
+    this.classList.remove("fa-stop");
+    this.classList.add("fa-play");
   }
   else {
     audio4.play();
     isPlaying = true;
+    this.classList.remove("fa-play");
+    this.classList.add("fa-stop");
   }
 });
