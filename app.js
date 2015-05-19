@@ -9,15 +9,20 @@ var playButton2 = document.getElementById("playButton2");
 
 var isPlaying = false;
 
+//if(joke.classList.contains('beryl') {
+    //joke.classList.remove('beryl');
+}
 playButton1.addEventListener('click', function(){
   if (isPlaying === true) {
     isPlaying = false;
+    //i.classList.add("fa-play");
     audio1.pause();
   }
   else {
     audio1.play();
     isPlaying = true;
-    //something about icons changing here
+    // i.classList.remove("fa-play");
+    // i.classList.add("fa-stop");
   }
 });
 
